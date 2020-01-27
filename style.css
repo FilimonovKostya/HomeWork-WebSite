@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  max-width: 2600px;
+  margin: auto;
+  min-width: 1135px;
+}
 .header {
   display: flex;
 }
@@ -133,7 +138,7 @@
   margin: 15px 0px 30px 70px;
 }
 .static {
-  margin: 30px 45px 15px 70px;
+  margin: 7% 14% 0% 13%;
 }
 .develop {
   font-weight: 800;
@@ -145,9 +150,9 @@
 }
 .striple {
   border-bottom: 2px solid black;
-  max-width: 300px;
+  max-width: 100%;
   position: relative;
-  margin-top: 8px;
+  margin-top: 2%;
 }
 .striple:before {
   content: "";
@@ -155,7 +160,7 @@
   top: 100%;
   right: 0;
   border-bottom: 2px solid white;
-  width: calc(100% - 100px);
+  width: calc(100% - 80%);
 }
 .nine:before {
   content: "";
@@ -163,7 +168,7 @@
   top: 100%;
   right: 0;
   border-bottom: 2px solid white;
-  width: calc(100% - 270px);
+  width: calc(100% - 90%);
 }
 
 .seven:before {
@@ -172,7 +177,7 @@
   top: 100%;
   right: 0;
   border-bottom: 2px solid white;
-  width: calc(100% - 200px);
+  width: calc(100% - 70%);
 }
 .eight:before {
   content: "";
@@ -180,7 +185,7 @@
   top: 100%;
   right: 0;
   border-bottom: 2px solid white;
-  width: calc(100% - 250px);
+  width: calc(100% - 80%);
 }
 .third_block {
   width: 100%;
@@ -309,12 +314,13 @@
 .graphic::before {
   content: "";
   background-image: url(/images/laptop.svg);
-  width: 60px;
-  height: 60px;
+  width: 100%;
+  height: 100%;
   position: absolute;
   background-size: contain;
-  margin-left: -10%;
+  margin-left: -13%;
   margin-top: -1%;
+  background-repeat: no-repeat;
 }
 .five_block {
   display: flex;
@@ -361,12 +367,13 @@
 .grafon::before {
   content: "";
   background-image: url(/images/laptop.svg);
-  width: 60px;
-  height: 60px;
+  width: 12%;
+  height: 100%;
   position: absolute;
   background-size: contain;
-  margin-left: -10%;
+  margin-left: -13%;
   margin-top: -1%;
+  background-repeat: no-repeat;
 }
 .study {
   width: 50%;
@@ -395,14 +402,13 @@
   font-size: 30px;
   font-weight: 200;
   top: 50%;
-  left: 30%;
-  right: 50%;
-  width: 800px;
+  width: inherit;
+  text-align: center;
   position: absolute;
 }
 .img {
   display: block;
-  margin-left: 48%;
+  margin-left: 47%;
   padding-top: 5%;
 }
 .full_image p {
@@ -411,7 +417,9 @@
   font-size: 15px;
   position: absolute;
   top: 75%;
-  left: 41%;
+
+  width: inherit;
+  text-align: center;
 }
 .about {
   display: flex;
@@ -513,8 +521,8 @@ textarea {
   height: 20px;
   position: absolute;
   background-size: contain;
-  margin-left: -7%;
-  margin-top: -2px;
+  margin-left: -9%;
+  margin-top: -0%;
 }
 .tel + li::before {
   content: "";
@@ -523,8 +531,8 @@ textarea {
   height: 20px;
   position: absolute;
   background-size: contain;
-  margin-left: -7%;
-  margin-top: -2px;
+  margin-left: -9%;
+  margin-top: -0%;
 }
 .tel + li + li::before {
   content: "";
@@ -533,8 +541,8 @@ textarea {
   height: 20px;
   position: absolute;
   background-size: contain;
-  margin-left: -7%;
-  margin-top: -2px;
+  margin-left: -9%;
+  margin-top: 0%;
 }
 
 .footer {
