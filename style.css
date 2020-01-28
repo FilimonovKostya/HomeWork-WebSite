@@ -14,7 +14,7 @@ body {
 .logo {
   width: 50%;
   height: 900px;
-  background: url(/images/home-img.jpg) no-repeat;
+  background: url(images/home-img.jpg) no-repeat;
   background-position: center;
 }
 .logo h1 {
@@ -96,7 +96,7 @@ body {
 .picture {
   width: 25%;
   height: 400px;
-  background: url(/images/about-img.jpg) 50% 15%;
+  background: url(images/about-img.jpg) 50% 15%;
 }
 .skills {
   width: 25%;
@@ -195,7 +195,7 @@ body {
 }
 .design {
   width: 25%;
-  background: url(/images/mac.svg) no-repeat;
+  background: url(images/mac.svg) no-repeat;
   background-color: #e4ae58;
   background-size: 100px;
   background-position: 50% 25%;
@@ -212,7 +212,7 @@ body {
 }
 .media {
   width: 25%;
-  background: url(/images/telega.svg) no-repeat;
+  background: url(images/telega.svg) no-repeat;
   background-color: #e4ae58;
   background-size: 100px;
   background-position: 50% 25%;
@@ -231,7 +231,7 @@ body {
 }
 .mobile {
   width: 25%;
-  background: url(/images/apps.svg) no-repeat;
+  background: url(images/apps.svg) no-repeat;
   background-color: #d4bcca;
   background-size: 100px;
   background-position: 50% 25%;
@@ -248,7 +248,7 @@ body {
 }
 .coding {
   width: 25%;
-  background: url(/images/html.svg) no-repeat;
+  background: url(images/html.svg) no-repeat;
   background-color: white;
   background-size: 100px;
   background-position: 50% 25%;
@@ -272,7 +272,7 @@ body {
 .ifone {
   width: 50%;
   height: 380px;
-  background: url(/images/experience-img.jpg) no-repeat;
+  background: url(images/experience-img.jpg) no-repeat;
 }
 .my_exp {
   width: 50%;
@@ -313,7 +313,7 @@ body {
 }
 .graphic::before {
   content: "";
-  background-image: url(/images/laptop.svg);
+  background-image: url(images/laptop.svg);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -366,7 +366,7 @@ body {
 }
 .grafon::before {
   content: "";
-  background-image: url(/images/laptop.svg);
+  background-image: url(images/laptop.svg);
   width: 12%;
   height: 100%;
   position: absolute;
@@ -378,7 +378,7 @@ body {
 .study {
   width: 50%;
   height: 380px;
-  background: url(/images/education-img.jpg) no-repeat;
+  background: url(images/education-img.jpg) no-repeat;
   background-position: center;
 }
 .full_image {
@@ -387,7 +387,7 @@ body {
   height: 480px;
   width: 100%;
   background-blend-mode: multiply;
-  background-image: url(/images/quotes-bg.jpg);
+  background-image: url(images/quotes-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.5);
@@ -448,19 +448,22 @@ body {
   margin-left: 5%;
   color: white;
 }
-hr {
-  margin-top: 8px;
-  background-color: #ea9753;
-  height: 2px;
-  border: none;
-}
-textarea {
+
+
+textarea,input[type="text"], input[type="email"] {
   resize: none;
   background-color: #e9714c;
   color: white;
   width: 100%;
   height: 20px;
   margin-top: 1%;
+  border-left-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-bottom-color: orange;
+  outline: none;
+  
+
 }
 .btn_second {
   margin-top: 2%;
@@ -478,7 +481,7 @@ textarea {
 .me {
   width: 25%;
   height: 600px;
-  background: url(/images/contact-img.jpg);
+  background: url(images/contact-img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -516,7 +519,7 @@ textarea {
 }
 .tel::before {
   content: "";
-  background-image: url(/images/telephone.svg);
+  background-image: url(images/telephone.svg);
   width: 20px;
   height: 20px;
   position: absolute;
@@ -526,7 +529,7 @@ textarea {
 }
 .tel + li::before {
   content: "";
-  background-image: url(/images/mail.svg);
+  background-image: url(images/mail.svg);
   width: 20px;
   height: 20px;
   position: absolute;
@@ -536,7 +539,7 @@ textarea {
 }
 .tel + li + li::before {
   content: "";
-  background-image: url(/images/world.svg);
+  background-image: url(images/world.svg);
   width: 20px;
   height: 20px;
   position: absolute;
@@ -562,7 +565,7 @@ textarea {
 }
 .iconcs {
   height: 10px;
-  display: inline-block;
-  margin-top: 60px;
-  margin-left: 47%;
+  display: block;
+  text-align:center;
+  padding-top:3%;
 }
