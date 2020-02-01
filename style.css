@@ -4,17 +4,18 @@
   box-sizing: border-box;
 }
 body {
-  max-width: 2600px;
+  max-width: 2400px;
   margin: auto;
   min-width: 1135px;
 }
 .header {
   display: flex;
 }
+
 .logo {
   width: 50%;
-  height: 900px;
-  background: url(images/home-img.jpg) no-repeat;
+  height: inherit;
+  background: url(/images/home-img.jpg) no-repeat;
   background-position: center;
 }
 .logo h1 {
@@ -194,12 +195,14 @@ body {
   color: white;
 }
 .design {
+  background-image: url(/images/mac.svg);
   width: 25%;
-  background: url(images/mac.svg) no-repeat;
   background-color: #e4ae58;
-  background-size: 100px;
+  background-size: 70px;
   background-position: 50% 25%;
+  background-repeat: no-repeat;
 }
+
 .design h3 {
   font-size: 28px;
   margin-top: 180px;
@@ -211,14 +214,15 @@ body {
   margin: 0px 25px;
 }
 .media {
+  background-image: url(images/telega.svg);
   width: 25%;
-  background: url(images/telega.svg) no-repeat;
   background-color: #e4ae58;
-  background-size: 100px;
-  background-position: 50% 25%;
-  width: 25%;
   background-color: #e9714c;
+  background-size: 70px;
+  background-position: 50% 25%;
+  background-repeat: no-repeat;
 }
+
 .media h3 {
   font-size: 28px;
   margin-top: 180px;
@@ -231,14 +235,17 @@ body {
 }
 .mobile {
   width: 25%;
-  background: url(images/apps.svg) no-repeat;
-  background-color: #d4bcca;
-  background-size: 100px;
-  background-position: 50% 25%;
+  background-color: #161616;
+}
+.fa-calendar-alt {
+  font-size: 70px;
+  display: block;
+  text-align: center;
+  margin-top: 60px;
 }
 .mobile h3 {
   font-size: 28px;
-  margin-top: 180px;
+  margin-top: 50px;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -248,15 +255,18 @@ body {
 }
 .coding {
   width: 25%;
-  background: url(images/html.svg) no-repeat;
   background-color: white;
-  background-size: 100px;
-  background-position: 50% 25%;
   color: #a09b99;
+}
+.fa-html5 {
+  font-size: 70px;
+  display: block;
+  text-align: center;
+  margin-top: 60px;
 }
 .coding h3 {
   font-size: 28px;
-  margin-top: 180px;
+  margin-top: 50px;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -367,7 +377,7 @@ body {
 .grafon::before {
   content: "";
   background-image: url(images/laptop.svg);
-  width: 12%;
+  width: 14%;
   height: 100%;
   position: absolute;
   background-size: contain;
@@ -449,8 +459,9 @@ body {
   color: white;
 }
 
-
-textarea,input[type="text"], input[type="email"] {
+textarea,
+input[type="text"],
+input[type="email"] {
   resize: none;
   background-color: #e9714c;
   color: white;
@@ -462,8 +473,6 @@ textarea,input[type="text"], input[type="email"] {
   border-top-style: none;
   border-bottom-color: orange;
   outline: none;
-  
-
 }
 .btn_second {
   margin-top: 2%;
@@ -563,9 +572,429 @@ textarea,input[type="text"], input[type="email"] {
   color: #ffeab1;
   font-size: 20px;
 }
-.iconcs {
-  height: 10px;
-  display: block;
-  text-align:center;
-  padding-top:3%;
+.icons {
+  text-align: center;
+  margin-top: 2%;
+  font-size: 30px;
+  color: yellowgreen;
+}
+.icons i {
+  padding: 0 10px;
+}
+
+/* ADAPTIVE */
+
+@media (max-width: 1200px) {
+  .header {
+    width: 100%;
+  }
+  .logo {
+    width: 50%;
+    height: 600px;
+    font-size: 20px;
+  }
+  .logo h1 {
+    margin-top: 3%;
+  }
+  .menubar {
+    width: 50%;
+    height: 600px;
+  }
+  .menu {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    margin-top: 4%;
+  }
+  .menu a {
+    background-color: #e5c1a5;
+    color: white;
+    border-radius: 18px;
+    padding: 10px 10px 30px 10px;
+  }
+  .menu a:hover {
+    color: black;
+  }
+  .info {
+    margin-top: 6%;
+    font-weight: 800;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  .button {
+    margin-top: -5%;
+  }
+
+  .second_block {
+    width: 100%;
+  }
+  .sed,
+  .vulp {
+    font-weight: 900;
+    text-align: center;
+  }
+  .picture,
+  .skills {
+    width: 25%;
+  }
+  .skills h2,
+  .photoshop {
+    display: inline-block;
+    margin-left: 15px;
+  }
+  .static {
+    width: 87%;
+    margin-top: 10px;
+    padding-top: 5%;
+    margin-left: 10px;
+  }
+  .procent {
+    font-size: 17px;
+    font-weight: 700;
+  }
+  .third_block {
+    width: 100%;
+  }
+
+  .third_block h3 {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 2%;
+  }
+  .third_block p {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+  }
+  .four_block {
+    width: 100%;
+  }
+  .four_block span {
+    font-size: 22px;
+  }
+  .four_block h3 {
+    font-size: 34px;
+  }
+  .previous {
+    font-size: 26px;
+  }
+  .graphic {
+    margin-left: 20%;
+    margin-bottom: 40px;
+  }
+  .graphic h4 {
+    font-size: 28px;
+    margin-right: 15px;
+  }
+  .graphic::before {
+    margin-left: -17%;
+  }
+  .five_block {
+    width: 100%;
+  }
+  .five_block span {
+    font-size: 22px;
+  }
+  .five_block h3 {
+    font-size: 34px;
+  }
+  .cursus {
+    font-size: 26px;
+  }
+
+  .grafon {
+    margin-left: 20%;
+    margin-bottom: 40px;
+  }
+  .grafon h4 {
+    font-size: 28px;
+    margin-right: 15px;
+  }
+  .grafon::before {
+    margin-left: -17%;
+  }
+  .about {
+    width: 100%;
+  }
+  .full_image h4 {
+    padding: 0 10px;
+  }
+  .contacts_info {
+    margin-left: 20%;
+  }
+  .contacts_info li {
+    padding: 15px 0;
+    font-size: 20px;
+  }
+  .find_me h3 {
+    text-align: center;
+  }
+  .footer p {
+    font-size: 20px;
+  }
+  .icons {
+    margin-top: 5%;
+  }
+}
+
+/*css mobile*/
+@media (max-width: 650px) {
+  .header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .logo {
+    width: 100%;
+    background-size: cover;
+  }
+  .logo h1 {
+    margin: 3% 0 0 3%;
+    font-size: 300%;
+  }
+  .menubar {
+    width: 100%;
+  }
+  .menu a {
+    padding: 4px 30px 34px 30px;
+    font-size: 26px;
+  }
+  .info :nth-child(3) {
+    font-size: 25px;
+  }
+  .button {
+    margin-top: -30px;
+    text-align: center;
+  }
+  .btn {
+    padding: 2% 10%;
+    font-size: 20px;
+  }
+  .second_block {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  .sed {
+    width: 100%;
+    font-size: 25px;
+  }
+  .picture,
+  .skills {
+    width: 50%;
+  }
+  .skills h2 {
+    display: block;
+    margin-bottom: -10px;
+  }
+  .skills h2,
+  .photoshop {
+    text-align: center;
+    display: block;
+  }
+  .static {
+    margin-top: -38px;
+    padding-bottom: 54px;
+    margin-left: 30px;
+  }
+  .static span {
+    font-size: 27px;
+  }
+  .third_block {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+  }
+  .third_block h3 {
+    font-size: 30px;
+  }
+  .third_block p {
+    display: block;
+    font-weight: 400;
+    font-size: 25px;
+    padding: 0 10px;
+  }
+  .design,
+  .media,
+  .mobile,
+  .coding {
+    width: 50%;
+    height: 300px;
+  }
+  .four_block {
+    width: 100%;
+  }
+  .ifone {
+    background-size: cover;
+  }
+  .my_exp h3 {
+    font-size: 45px;
+  }
+  .previous {
+    font-size: 27px;
+  }
+  .graphic h4 {
+    font-size: 33px;
+  }
+  .graphic p {
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
+  .graphic::before {
+    margin-left: -20%;
+  }
+  .five_block {
+    width: 100%;
+  }
+  .education h3 {
+    font-size: 45px;
+  }
+  .cursus {
+    font-size: 27px;
+  }
+  .grafon h4 {
+    font-size: 30px;
+  }
+
+  .study {
+    background-size: cover;
+  }
+  .full_image p {
+    font-size: 20px;
+  }
+  .about_me {
+    margin-bottom: 55px;
+  }
+  .about {
+    width: 100%;
+    font-size: 22px;
+  }
+  .footer p {
+    font-size: 22px;
+  }
+}
+/* FOR 480 PIXEL*/
+@media (max-width: 480px) {
+  .header {
+    width: 100%;
+  }
+  .menubar {
+    height: 850px;
+    font-size: 25px;
+  }
+  .info :nth-child(3) {
+    font-size: 31px;
+  }
+  .sed {
+    height: 620px;
+    font-size: 32px;
+  }
+  .picture {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    background-size: cover;
+  }
+  .skills {
+    width: 100%;
+    height: 570px;
+    background-color: #e5a340;
+  }
+  .skills :first-child {
+    font-size: 38px;
+  }
+  .photoshop {
+    font-size: 27px;
+  }
+  .third_block {
+    height: 800px;
+  }
+  .third_block :not(.design):not(.fab):not(.far) {
+    font-size: 33px;
+  }
+
+  .design,
+  .media,
+  .mobile,
+  .coding {
+    height: 400px;
+    font-size: 30px;
+  }
+  .four_block,
+  .five_block {
+    width: 100%;
+    height: 833px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .ifone,
+  .study {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-size: cover;
+  }
+  .my_exp,
+  .education {
+    width: 100%;
+    height: auto;
+  }
+  .graphic span {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  span.parag {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .grafon h4 {
+    font-size: 33px;
+  }
+  .my_exp p {
+    font-size: 25px;
+  }
+  .education p {
+    font-size: 25px;
+  }
+  .previous,
+  .cursus {
+    font-size: 30px;
+  }
+  .about {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  .email {
+    width: 70%;
+  }
+  .me {
+    width: 30%;
+  }
+  .find_me {
+    height: 100%;
+    width: 100%;
+    font-size: 25px;
+  }
+  .find_me h3 {
+    margin-top: 0%;
+    font-size: 36px;
+  }
+  .contacts_info li {
+    font-size: 28px;
+  }
+  .email p {
+    font-size: 27px;
+  }
+  .about_me {
+    font-size: 30px;
+    margin-bottom: 16px;
+  }
+
+  .footer {
+    width: 100%;
+    height: auto;
+  }
 }
