@@ -7,44 +7,55 @@ body {
   max-width: 2400px;
   margin: auto;
   min-width: 1135px;
+  
 }
+
+/*style for our header, which consits of :bg-image and navigation and content*/
+
 .header {
   display: flex;
 }
 
-.logo {
+/*background image Stimulus*/
+.logo_header {
   width: 50%;
   height: inherit;
-  background: url(/images/home-img.jpg) no-repeat;
+  background: url(images/home-img.jpg) no-repeat;
   background-position: center;
 }
-.logo h1 {
+/*Logo-text*/
+.logo_header h1 {
   margin-top: 40px;
   margin-left: 150px;
   text-shadow: 1px 1px white, 2px 2px #777;
   color: #333;
 }
+/*settings our block, which will be located our information*/
 .menubar {
   width: 50%;
   height: 900px;
   background-color: #f0e2d7;
 }
+/* menu display*/
 .menu {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   margin-top: 40px;
 }
+/* settings  links*/
 .menu a {
   text-decoration: none;
   text-transform: uppercase;
   color: #969aa2;
   height: 15px;
 }
+/*links change color*/
 .menu a:hover {
   color: #deb16e;
 }
-.info {
+/*position content*/
+.info_header {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,24 +63,26 @@ body {
   margin-left: 50px;
   margin-right: 50px;
 }
-.info span {
+/*style for Welcome to My WebSite*/
+.info_header span {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #b2b9b6;
   padding-bottom: 20px;
 }
-.info h1 {
+.info_header h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #343b3b;
   font-weight: 300;
   padding-bottom: 20px;
 }
-.info p {
+.info_header p {
   color: #9a9ea6;
   line-height: 1.8;
   padding-bottom: 20px;
 }
+/*button*/
 .btn {
   margin-top: 40px;
   padding: 16px 44px;
@@ -80,47 +93,58 @@ body {
   font-weight: 700;
   cursor: pointer;
 }
+/*change color */
 .btn:hover {
   background-color: black;
   color: white;
 }
+
+/*styles  for three blocks :about donec auctor, bg-image(person make notes), My Skills; */
+
 .second_block {
   display: flex;
   height: 400px;
   width: 100%;
 }
-.sed {
+/*under our header*/
+.donec_auctor {
   width: 50%;
   height: 400px;
   background-color: white;
 }
+/*image where person make notes*/
 .picture {
   width: 25%;
   height: 400px;
   background: url(images/about-img.jpg) 50% 15%;
 }
+/*block My Skills*/
 .skills {
   width: 25%;
   height: 400px;
   background: #e4ae58;
 }
-.sed h2 {
+/*heading */
+.donec_auctor h2 {
   margin: 30px 0 0px 25px;
   font-family: "Trebuchet" serif;
   font-weight: 500;
   letter-spacing: 1px;
 }
+/* small text*/
 .vulp {
   display: block;
   margin: 15px 0 10px 25px;
   color: #eed2a7;
 }
-.sed p {
+/*fish-text*/
+.donec_auctor p {
   display: block;
   margin: 25px 30px 0px 25px;
   line-height: 1.6;
   color: #a5a3a8;
 }
+/*heading My Skills*/
 .skills h2 {
   color: white;
   font-family: "Trebuchet ms";
@@ -129,6 +153,7 @@ body {
   font-weight: 200;
   margin: 30px 0px 14px 70px;
 }
+/*em, photoshop and html..*/
 .photoshop {
   display: block;
   color: white;
@@ -138,9 +163,11 @@ body {
   font-weight: 200;
   margin: 15px 0px 30px 70px;
 }
+/*positon frontend Design, backend processing, Html5*/
 .static {
   margin: 7% 14% 0% 13%;
 }
+/*text skills*/
 .develop {
   font-weight: 800;
   font-size: 20px;
@@ -149,12 +176,14 @@ body {
 .procent {
   float: right;
 }
+/*procent line*/
 .striple {
   border-bottom: 2px solid black;
   max-width: 100%;
   position: relative;
   margin-top: 2%;
 }
+/*this code i take from stackoverflow and change procent*/
 .striple:before {
   content: "";
   position: absolute;
@@ -163,6 +192,7 @@ body {
   border-bottom: 2px solid white;
   width: calc(100% - 80%);
 }
+/*striple 90%*/
 .nine:before {
   content: "";
   position: absolute;
@@ -171,7 +201,7 @@ body {
   border-bottom: 2px solid white;
   width: calc(100% - 90%);
 }
-
+/*striple 70%*/
 .seven:before {
   content: "";
   position: absolute;
@@ -180,6 +210,7 @@ body {
   border-bottom: 2px solid white;
   width: calc(100% - 70%);
 }
+/*/*striple 80%*/*/
 .eight:before {
   content: "";
   position: absolute;
@@ -188,21 +219,25 @@ body {
   border-bottom: 2px solid white;
   width: calc(100% - 80%);
 }
+
+/* style for blocks : Interface Design, Media Strategy, Mobile App, Coding*/
+
 .third_block {
   width: 100%;
   display: flex;
   height: 300px;
   color: white;
 }
+/*block with bg-image monitor*/
 .design {
-  background-image: url(/images/mac.svg);
+  background-image: url(images/mac.svg);
   width: 25%;
   background-color: #e4ae58;
   background-size: 70px;
   background-position: 50% 25%;
   background-repeat: no-repeat;
 }
-
+/*heading interface design*/
 .design h3 {
   font-size: 28px;
   margin-top: 180px;
@@ -213,6 +248,7 @@ body {
   text-align: center;
   margin: 0px 25px;
 }
+/*block with bg-image telegram*/
 .media {
   background-image: url(images/telega.svg);
   width: 25%;
@@ -223,6 +259,7 @@ body {
   background-repeat: no-repeat;
 }
 
+/*heading Media Strategy*/
 .media h3 {
   font-size: 28px;
   margin-top: 180px;
@@ -233,16 +270,19 @@ body {
   text-align: center;
   margin: 0px 25px;
 }
+/*block with bg-image Mobile App*/
 .mobile {
   width: 25%;
   background-color: #161616;
 }
+/*svg icon calendar*/
 .fa-calendar-alt {
   font-size: 70px;
   display: block;
   text-align: center;
   margin-top: 60px;
 }
+/*heading Mobile App*/
 .mobile h3 {
   font-size: 28px;
   margin-top: 50px;
@@ -253,17 +293,20 @@ body {
   text-align: center;
   margin: 0px 25px;
 }
+/*block with bg-image hmtl5*/
 .coding {
   width: 25%;
   background-color: white;
   color: #a09b99;
 }
+/*svg icon html5*/
 .fa-html5 {
   font-size: 70px;
   display: block;
   text-align: center;
   margin-top: 60px;
 }
+/*heading coding*/
 .coding h3 {
   font-size: 28px;
   margin-top: 50px;
@@ -274,22 +317,28 @@ body {
   text-align: center;
   margin: 0px 25px;
 }
+
+/*style for bg-image(niger with iphone) and My Experiences*/
+
 .four_block {
   display: flex;
   width: 100%;
   height: 380px;
 }
+/*bg image with niger and iphone*/
 .ifone {
   width: 50%;
   height: 380px;
   background: url(images/experience-img.jpg) no-repeat;
 }
+/*block which find "My expericnece"*/
 .my_exp {
   width: 50%;
   height: 380px;
   background-color: #e9714c;
   color: white;
 }
+/*heading My Exp*/
 .my_exp h3 {
   margin-top: 6%;
   margin-left: 8%;
@@ -297,6 +346,7 @@ body {
   font-family: "Courier New", Courier, monospace;
   font-weight: 300;
 }
+/*small text before My Exp*/
 .previous {
   display: block;
   margin-top: 2%;
@@ -305,6 +355,7 @@ body {
   font-size: 18px;
   font-family: "Courier New", Courier, monospace;
 }
+/*blcoks which find our exp*/
 .graphic {
   margin: 0 0 3% 16%;
   position: relative;
@@ -321,6 +372,7 @@ body {
   color: #161616;
   margin-left: 1%;
 }
+/*position lattop*/
 .graphic::before {
   content: "";
   background-image: url(images/laptop.svg);
@@ -331,7 +383,11 @@ body {
   margin-left: -13%;
   margin-top: -1%;
   background-repeat: no-repeat;
+  background-size: 62px;
 }
+
+/*style for My Education and bg-image(beautiful nails touch lattop)*/
+
 .five_block {
   display: flex;
   width: 100%;
@@ -381,9 +437,10 @@ body {
   height: 100%;
   position: absolute;
   background-size: contain;
-  margin-left: -13%;
+  margin-left: -14%;
   margin-top: -1%;
   background-repeat: no-repeat;
+  background-size: 62px;
 }
 .study {
   width: 50%;
@@ -391,6 +448,9 @@ body {
   background: url(images/education-img.jpg) no-repeat;
   background-position: center;
 }
+
+/*bg-image which has width 100% also has yellow star*/
+
 .full_image {
   top: 0;
   position: relative;
@@ -431,6 +491,9 @@ body {
   width: inherit;
   text-align: center;
 }
+
+/*last block before footer , there are: Feedback, bg-image(person on the internet), contacnts inforamtion*/
+
 .about {
   display: flex;
   width: 100%;
@@ -557,6 +620,8 @@ input[type="email"] {
   margin-top: 0%;
 }
 
+/*This if usually footer for our web-site, there are icons and copyright*/
+
 .footer {
   width: 100%;
   height: 380px;
@@ -568,433 +633,20 @@ input[type="email"] {
   padding-top: 180px;
   height: 10px;
 }
-.footer span {
-  color: #ffeab1;
+.footer span a{
   font-size: 20px;
+  color: #91723b; 
+  text-decoration: none;
 }
 .icons {
   text-align: center;
   margin-top: 2%;
   font-size: 30px;
-  color: yellowgreen;
+  
+}
+.icons a{
+  color:gray;
 }
 .icons i {
   padding: 0 10px;
-}
-
-/* ADAPTIVE */
-
-@media (max-width: 1200px) {
-  .header {
-    width: 100%;
-  }
-  .logo {
-    width: 50%;
-    height: 600px;
-    font-size: 20px;
-  }
-  .logo h1 {
-    margin-top: 3%;
-  }
-  .menubar {
-    width: 50%;
-    height: 600px;
-  }
-  .menu {
-    font-size: 18px;
-    font-family: "Roboto", sans-serif;
-    margin-top: 4%;
-  }
-  .menu a {
-    background-color: #e5c1a5;
-    color: white;
-    border-radius: 18px;
-    padding: 10px 10px 30px 10px;
-  }
-  .menu a:hover {
-    color: black;
-  }
-  .info {
-    margin-top: 6%;
-    font-weight: 800;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-  }
-  .button {
-    margin-top: -5%;
-  }
-
-  .second_block {
-    width: 100%;
-  }
-  .sed,
-  .vulp {
-    font-weight: 900;
-    text-align: center;
-  }
-  .picture,
-  .skills {
-    width: 25%;
-  }
-  .skills h2,
-  .photoshop {
-    display: inline-block;
-    margin-left: 15px;
-  }
-  .static {
-    width: 87%;
-    margin-top: 10px;
-    padding-top: 5%;
-    margin-left: 10px;
-  }
-  .procent {
-    font-size: 17px;
-    font-weight: 700;
-  }
-  .third_block {
-    width: 100%;
-  }
-
-  .third_block h3 {
-    font-family: "Roboto", sans-serif;
-    letter-spacing: 2px;
-    margin-bottom: 2%;
-  }
-  .third_block p {
-    font-size: 18px;
-    margin: 0;
-    padding: 0;
-  }
-  .four_block {
-    width: 100%;
-  }
-  .four_block span {
-    font-size: 22px;
-  }
-  .four_block h3 {
-    font-size: 34px;
-  }
-  .previous {
-    font-size: 26px;
-  }
-  .graphic {
-    margin-left: 20%;
-    margin-bottom: 40px;
-  }
-  .graphic h4 {
-    font-size: 28px;
-    margin-right: 15px;
-  }
-  .graphic::before {
-    margin-left: -17%;
-  }
-  .five_block {
-    width: 100%;
-  }
-  .five_block span {
-    font-size: 22px;
-  }
-  .five_block h3 {
-    font-size: 34px;
-  }
-  .cursus {
-    font-size: 26px;
-  }
-
-  .grafon {
-    margin-left: 20%;
-    margin-bottom: 40px;
-  }
-  .grafon h4 {
-    font-size: 28px;
-    margin-right: 15px;
-  }
-  .grafon::before {
-    margin-left: -17%;
-  }
-  .about {
-    width: 100%;
-  }
-  .full_image h4 {
-    padding: 0 10px;
-  }
-  .contacts_info {
-    margin-left: 20%;
-  }
-  .contacts_info li {
-    padding: 15px 0;
-    font-size: 20px;
-  }
-  .find_me h3 {
-    text-align: center;
-  }
-  .footer p {
-    font-size: 20px;
-  }
-  .icons {
-    margin-top: 5%;
-  }
-}
-
-/*css mobile*/
-@media (max-width: 650px) {
-  .header {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .logo {
-    width: 100%;
-    background-size: cover;
-  }
-  .logo h1 {
-    margin: 3% 0 0 3%;
-    font-size: 300%;
-  }
-  .menubar {
-    width: 100%;
-  }
-  .menu a {
-    padding: 4px 30px 34px 30px;
-    font-size: 26px;
-  }
-  .info :nth-child(3) {
-    font-size: 25px;
-  }
-  .button {
-    margin-top: -30px;
-    text-align: center;
-  }
-  .btn {
-    padding: 2% 10%;
-    font-size: 20px;
-  }
-  .second_block {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    height: 100%;
-  }
-  .sed {
-    width: 100%;
-    font-size: 25px;
-  }
-  .picture,
-  .skills {
-    width: 50%;
-  }
-  .skills h2 {
-    display: block;
-    margin-bottom: -10px;
-  }
-  .skills h2,
-  .photoshop {
-    text-align: center;
-    display: block;
-  }
-  .static {
-    margin-top: -38px;
-    padding-bottom: 54px;
-    margin-left: 30px;
-  }
-  .static span {
-    font-size: 27px;
-  }
-  .third_block {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    height: 600px;
-  }
-  .third_block h3 {
-    font-size: 30px;
-  }
-  .third_block p {
-    display: block;
-    font-weight: 400;
-    font-size: 25px;
-    padding: 0 10px;
-  }
-  .design,
-  .media,
-  .mobile,
-  .coding {
-    width: 50%;
-    height: 300px;
-  }
-  .four_block {
-    width: 100%;
-  }
-  .ifone {
-    background-size: cover;
-  }
-  .my_exp h3 {
-    font-size: 45px;
-  }
-  .previous {
-    font-size: 27px;
-  }
-  .graphic h4 {
-    font-size: 33px;
-  }
-  .graphic p {
-    letter-spacing: 2px;
-    font-size: 20px;
-  }
-  .graphic::before {
-    margin-left: -20%;
-  }
-  .five_block {
-    width: 100%;
-  }
-  .education h3 {
-    font-size: 45px;
-  }
-  .cursus {
-    font-size: 27px;
-  }
-  .grafon h4 {
-    font-size: 30px;
-  }
-
-  .study {
-    background-size: cover;
-  }
-  .full_image p {
-    font-size: 20px;
-  }
-  .about_me {
-    margin-bottom: 55px;
-  }
-  .about {
-    width: 100%;
-    font-size: 22px;
-  }
-  .footer p {
-    font-size: 22px;
-  }
-}
-/* FOR 480 PIXEL*/
-@media (max-width: 480px) {
-  .header {
-    width: 100%;
-  }
-  .menubar {
-    height: 850px;
-    font-size: 25px;
-  }
-  .info :nth-child(3) {
-    font-size: 31px;
-  }
-  .sed {
-    height: 620px;
-    font-size: 32px;
-  }
-  .picture {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    background-size: cover;
-  }
-  .skills {
-    width: 100%;
-    height: 570px;
-    background-color: #e5a340;
-  }
-  .skills :first-child {
-    font-size: 38px;
-  }
-  .photoshop {
-    font-size: 27px;
-  }
-  .third_block {
-    height: 800px;
-  }
-  .third_block :not(.design):not(.fab):not(.far) {
-    font-size: 33px;
-  }
-
-  .design,
-  .media,
-  .mobile,
-  .coding {
-    height: 400px;
-    font-size: 30px;
-  }
-  .four_block,
-  .five_block {
-    width: 100%;
-    height: 833px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .ifone,
-  .study {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    background-size: cover;
-  }
-  .my_exp,
-  .education {
-    width: 100%;
-    height: auto;
-  }
-  .graphic span {
-    font-size: 30px;
-    font-weight: 500;
-  }
-  span.parag {
-    font-size: 30px;
-    font-weight: 500;
-  }
-  .grafon h4 {
-    font-size: 33px;
-  }
-  .my_exp p {
-    font-size: 25px;
-  }
-  .education p {
-    font-size: 25px;
-  }
-  .previous,
-  .cursus {
-    font-size: 30px;
-  }
-  .about {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    height: 100%;
-  }
-  .email {
-    width: 70%;
-  }
-  .me {
-    width: 30%;
-  }
-  .find_me {
-    height: 100%;
-    width: 100%;
-    font-size: 25px;
-  }
-  .find_me h3 {
-    margin-top: 0%;
-    font-size: 36px;
-  }
-  .contacts_info li {
-    font-size: 28px;
-  }
-  .email p {
-    font-size: 27px;
-  }
-  .about_me {
-    font-size: 30px;
-    margin-bottom: 16px;
-  }
-
-  .footer {
-    width: 100%;
-    height: auto;
-  }
 }
