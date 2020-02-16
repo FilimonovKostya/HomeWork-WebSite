@@ -2,14 +2,44 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+
 @media (max-width: 1200px) {
   .header {
     width: 100%;
   }
+  /*БУРГЕР НАЧАЛО*/
+  .burger-menu {
+    display: flex;
+  }
+  .items {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    height: 110px;
+    font-size: 23px;
+    width: 90%;
+    top: -100%;
+    background-color: #020202;
+    visibility: hidden;
+    border-radius: 100px;
+    transition: 0.3s;
+    opacity: 0.7;
+    margin: 0 60px;
+    z-index: 2;
+  }
+
+  /*КОНЕЦ БУРГЕРА*/
+
   .logo_header {
     width: 50%;
     height: 600px;
     font-size: 20px;
+  }
+  .burger-menu {
+    display: flex;
   }
   .logo_header h1 {
     margin-top: 3%;
@@ -19,19 +49,9 @@ body {
     height: 600px;
   }
   .menu {
-    font-size: 18px;
-    font-family: "Roboto", sans-serif;
-    margin-top: 4%;
+    display: none;
   }
-  .menu a {
-    background-color: #e5c1a5;
-    color: white;
-    border-radius: 18px;
-    padding: 10px 10px 30px 10px;
-  }
-  .menu a:hover {
-    color: black;
-  }
+
   .info_header {
     margin-top: 6%;
     font-weight: 800;
@@ -72,7 +92,6 @@ body {
   .third_block {
     width: 100%;
   }
-
   .third_block h3 {
     font-family: "Roboto", sans-serif;
     letter-spacing: 2px;
@@ -150,12 +169,13 @@ body {
     content: "";
     margin-left: -15%;
   }
-}
-.footer p {
-  font-size: 20px;
-}
-.icons {
-  margin-top: 5%;
+
+  .footer p {
+    font-size: 20px;
+  }
+  .icons {
+    margin-top: 5%;
+  }
 }
 
 /*style for smartfone*/
@@ -299,19 +319,54 @@ body {
 }
 
 @media (max-width: 480px) {
+  body .burger-menu {
+    visibility: visible;
+  }
+  /*burger*/
+  .items {
+    font-size: 30px;
+  }
+  /*end burger*/
   .header {
     width: 100%;
   }
+  .info_header span {
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+  }
+  .info_header h1 {
+    font-size: 60px;
+    font-family: "Roboto", sans-serif;
+  }
+  .menu {
+    display: none;
+  }
   .menubar {
-    height: 850px;
+    height: 900px;
     font-size: 25px;
   }
+  .btn {
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+  }
   .info_header :nth-child(3) {
-    font-size: 31px;
+    font-size: 35px;
+    font-family: "Roboto", sans-serif;
   }
   .donec_auctor {
     height: 620px;
-    font-size: 32px;
+  }
+  .donec_auctor h2 {
+    font-size: 50px;
+    font-family: "Roboto", sans-serif;
+  }
+  .vulp {
+    font-size: 35px;
+    font-family: "Roboto", sans-serif;
+  }
+  .donec_auctor p {
+    font-size: 35px;
+    font-family: "Roboto", sans-serif;
   }
   .picture {
     display: flex;
@@ -319,35 +374,43 @@ body {
     flex-wrap: wrap;
     background-size: cover;
   }
+  .static span {
+    font-size: 35px;
+  }
   .skills {
     width: 100%;
     height: 570px;
     background-color: #e5a340;
   }
   .skills :first-child {
-    font-size: 38px;
+    font-size: 42px;
+    font-family: "Roboto", sans-serif;
   }
   .photoshop {
-    font-size: 27px;
+    font-size: 35px;
   }
   .third_block {
-    height: 800px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
   .third_block :not(.design):not(.fab):not(.far) {
-    font-size: 33px;
+    font-size: 40px;
+    font-family: "Roboto", sans-serif;
   }
-
   .design,
   .media,
   .mobile,
   .coding {
     height: 400px;
     font-size: 30px;
+    width: 100%;
   }
   .four_block,
   .five_block {
     width: 100%;
-    height: 833px;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
   }
@@ -363,22 +426,49 @@ body {
     width: 100%;
     height: auto;
   }
+  .my_exp h3 {
+    font-size: 60px;
+    font-family: "Roboto", sans-serif;
+  }
+
   .graphic span {
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 35px;
+    font-weight: 900;
+  }
+  .graphic h4 {
+    font-size: 45px;
+    font-family: "Roboto", sans-serif;
   }
   span.parag {
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 35px;
+    font-weight: 900;
   }
   .grafon h4 {
-    font-size: 33px;
+    font-size: 45px;
+    font-family: "Roboto", sans-serif;
   }
   .my_exp p {
-    font-size: 25px;
+    font-size: 40px;
+    font-family: "Roboto", sans-serif;
   }
   .education p {
     font-size: 25px;
+  }
+  .graphic::before {
+    margin-left: -15%;
+    background-size: 100px;
+  }
+  .education h3 {
+    font-size: 60px;
+    font-family: "Roboto", sans-serif;
+  }
+  .education p {
+    font-size: 40px;
+    font-family: "Roboto", sans-serif;
+  }
+  .grafon::before {
+    margin-left: -14%;
+    background-size: 100px;
   }
   .previous,
   .cursus {
@@ -390,11 +480,24 @@ body {
     flex-wrap: wrap;
     height: 100%;
   }
+  .full_image h4 {
+    font-size: 40px;
+    font-family: "Roboto", sans-serif;
+  }
+  .full_image p {
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+  }
   .email {
     width: 70%;
+    height: 800px;
+  }
+  .email h2 {
+    font-size: 55px;
   }
   .me {
     width: 30%;
+    height: auto;
   }
   .find_me {
     height: 100%;
@@ -403,26 +506,75 @@ body {
   }
   .find_me h3 {
     margin-top: 0%;
-    font-size: 36px;
+    font-size: 45px;
+    font-family: "Roboto", sans-serif;
+  }
+  .find_me p {
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
   }
   .contacts_info li {
-    font-size: 28px;
+    font-size: 31px;
+    font-family: "Roboto", sans-serif;
   }
   .email p {
-    font-size: 27px;
+    font-size: 35px;
   }
   .about_me {
-    font-size: 30px;
+    font-size: 35px;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 10px;
     margin-bottom: 16px;
+  }
+  textarea,
+  input[type="text"],
+  input[type="email"] {
+    height: 48px;
+    font-size: 30px;
+  }
+  .btn_second {
+    font-size: 30px;
+  }
+  .contacts_info li:nth-child(n):before {
+    content: "";
+    margin-left: -14%;
+    background-size: 43px;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
   }
 
   .footer {
     width: 100%;
     height: auto;
   }
+  .footer p {
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+  }
+  .footer span a {
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+  }
+  .icons {
+    margin-top: 7%;
+    font-size: 45px;
+  }
 }
-
 @media (max-width: 350px) {
+  .menu {
+    display: none;
+  }
+  .items {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 379px;
+    font-size: 40px;
+    border-radius: 20px;
+    width: 88%;
+  }
+
   .menubar {
     height: 1620px;
   }
@@ -546,6 +698,7 @@ body {
     background-size: 15%;
     height: 100%;
     width: 100%;
+    margin-left: -20%;
   }
   .full_image h4 {
     padding: 0px 10px;
@@ -598,6 +751,10 @@ body {
   }
   .find_me {
     font-size: 40px;
+    font-family: "Roboto", sans-serif;
+  }
+  .find_me p {
+    font-size: 35px;
     font-family: "Roboto", sans-serif;
   }
   .contacts_info li a {

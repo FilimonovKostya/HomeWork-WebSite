@@ -7,8 +7,79 @@ body {
   max-width: 2400px;
   margin: auto;
   min-width: 1135px;
-  
 }
+
+/*burger*/
+.burger-menu {
+  display: none;
+}
+
+#check__menu {
+  opacity: 0;
+}
+.toggle__menu {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+
+  width: 35px;
+  height: 35px;
+  z-index: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.toggle__menu span,
+.toggle__menu span::after,
+.toggle__menu span::before {
+  height: 2px;
+  width: 100%;
+  background-color: lightseagreen;
+  position: absolute;
+  border-radius: 2px;
+}
+.toggle__menu span::after {
+  content: "";
+  top: 8px;
+}
+.toggle__menu span::before {
+  content: "";
+  top: -8px;
+}
+.items {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  height: 400px;
+  font-size: 40px;
+  width: 100%;
+  top: -100%;
+  background-color: black;
+  visibility: hidden;
+  border-radius: 5px;
+  transition: 0.3s;
+  opacity: 0.7;
+}
+.items__links {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: cornflowerblue;
+}
+.items__links:hover {
+  display: block;
+  padding: 10px 40px;
+  background: aliceblue;
+  border-radius: 100px;
+  transition: 0.2s;
+}
+#check__menu:checked ~ .items {
+  visibility: visible;
+  top: 10px;
+}
+/*END BURGER*/
 
 /*style for our header, which consits of :bg-image and navigation and content*/
 
@@ -210,8 +281,8 @@ body {
   border-bottom: 2px solid white;
   width: calc(100% - 70%);
 }
-/*/*striple 80%*/*/
-.eight:before {
+/*/*striple 80%*/
+*/ .eight:before {
   content: "";
   position: absolute;
   top: 100%;
@@ -633,19 +704,18 @@ input[type="email"] {
   padding-top: 180px;
   height: 10px;
 }
-.footer span a{
+.footer span a {
   font-size: 20px;
-  color: #91723b; 
+  color: #91723b;
   text-decoration: none;
 }
 .icons {
   text-align: center;
-  margin-top: 2%;
+  margin-top: 5%;
   font-size: 30px;
-  
 }
-.icons a{
-  color:gray;
+.icons a {
+  color: gray;
 }
 .icons i {
   padding: 0 10px;
